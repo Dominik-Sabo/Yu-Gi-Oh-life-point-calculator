@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <EditText
+        android:id="@+id/etPlayer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appBorder"
+        android:layout_marginHorizontal="@dimen/small_border"
+        android:hint="@string/player_1"/>
+
+    <EditText
+        android:id="@+id/etPlayer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/small_border"
+        android:layout_below="@id/etPlayer1"
+        android:hint="@string/player_2"/>
+
+    <EditText
+        android:id="@+id/etStartingLifePoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/appBorder"
+        android:inputType="number"
+        android:hint="@string/lifepoints"/>
+
+    <Button
+        android:id="@+id/btnJanken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/ivJanken1"
+        android:layout_marginBottom="@dimen/appBorder"
+        android:text="@string/rock_paper_scissors"/>
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/appBorder"
+
+        android:text="@string/play"/>
+
+    <ImageView
+        android:id="@+id/ivJanken1"
+        android:layout_width="@dimen/janken"
+        android:layout_height="@dimen/janken"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/small_border"/>
+
+    <ImageView
+        android:id="@+id/ivJanken2"
+        android:layout_width="@dimen/janken"
+        android:layout_height="@dimen/janken"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/small_border"/>
+
+
+
+
+</RelativeLayout>

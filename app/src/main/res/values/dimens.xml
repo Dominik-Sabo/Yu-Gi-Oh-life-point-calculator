@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_border">20dp</dimen>
+    <dimen name="etHeight">45dp</dimen>
+    <dimen name="appBorder">10dp</dimen>
+    <dimen name="counterfont">35dp</dimen>
+    <dimen name="janken">120dp</dimen>
+    <dimen name="coin">90dp</dimen>
+</resources>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvLifeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/appBorder"
+        android:text="8000"
+        android:textSize="@dimen/etHeight"/>
+
+    <Button
+        android:id="@+id/btn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tvLifeCount"
+        android:layout_marginLeft="@dimen/small_border"
+        android:text="@string/_10"
+        android:textSize="@dimen/small_border"/>
+
+    <Button
+        android:id="@+id/btn100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn10"
+        android:layout_marginLeft="@dimen/small_border"
+        android:text="@string/_100"
+        android:textSize="@dimen/small_border"/>
+
+    <Button
+        android:id="@+id/btn500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn100"
+        android:layout_marginLeft="@dimen/small_border"
+        android:text="@string/_500"
+        android:textSize="@dimen/small_border"/>
+
+    <Button
+        android:id="@+id/btn1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn500"
+        android:layout_marginLeft="@dimen/small_border"
+        android:text="@string/_1000"
+        android:textSize="@dimen/small_border"/>
+
+    <Button
+        android:id="@+id/btnM10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvLifeCount"
+        android:layout_marginRight="@dimen/small_border"
+        android:text="@string/_m10"
+        android:textSize="@dimen/small_border"/>
+
+    <Button
+        android:id="@+id/btnM100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btnM10"
+        android:layout_marginRight="@dimen/small_border"
+        android:text="@string/_m100"
+        android:textSize="@dimen/small_border"/>
+
+    <Button
+        android:id="@+id/btnM500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btnM100"
+        android:layout_marginRight="@dimen/small_border"
+        android:text="@string/_m500"
+        android:textSize="@dimen/small_border"/>
+
+    <Button
+        android:id="@+id/btnM1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btnM500"
+        android:layout_marginRight="@dimen/small_border"
+        android:text="@string/_m1000"
+        android:textSize="@dimen/small_border"/>
+
+    <TextView
+        android:id="@+id/tvCounter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnM1000"
+        android:layout_marginTop="@dimen/etHeight"
+        android:layout_marginLeft="@dimen/etHeight"
+        android:layout_alignLeft="@id/btn1000"
+        android:text="@string/_0"
+        android:textSize="@dimen/counterfont"/>
+
+    <TextView
+        android:id="@+id/tvCounter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnM1000"
+        android:layout_marginTop="@dimen/etHeight"
+        android:layout_centerHorizontal="true"
+        android:text="@string/_0"
+        android:textSize="@dimen/counterfont"/>
+
+    <TextView
+        android:id="@+id/tvCounter3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnM1000"
+        android:layout_marginTop="@dimen/etHeight"
+        android:layout_marginRight="@dimen/etHeight"
+        android:layout_alignRight="@id/btnM1000"
+        android:text="@string/_0"
+        android:textSize="@dimen/counterfont"/>
+
+    <ImageView
+        android:id="@+id/btnCounter1Minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCounter1"
+        android:layout_alignRight="@id/tvCounter1"
+        android:layout_marginRight="@dimen/appBorder"
+        android:src="@drawable/ic_remove_circle_outline_black_40dp"/>
+
+    <ImageView
+        android:id="@+id/btnCounter1Plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCounter1"
+        android:layout_alignLeft="@id/tvCounter1"
+        android:layout_marginLeft="@dimen/appBorder"
+        android:src="@drawable/ic_add_circle_outline_black_40dp"/>
+
+    <ImageView
+        android:id="@+id/btnCounter2Minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCounter1"
+        android:layout_alignRight="@id/tvCounter2"
+        android:layout_marginRight="@dimen/appBorder"
+        android:src="@drawable/ic_remove_circle_outline_black_40dp"/>
+
+    <ImageView
+        android:id="@+id/btnCounter2Plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCounter1"
+        android:layout_alignLeft="@id/tvCounter2"
+        android:layout_marginLeft="@dimen/appBorder"
+        android:src="@drawable/ic_add_circle_outline_black_40dp"/>
+
+    <ImageView
+        android:id="@+id/btnCounter3Minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCounter1"
+        android:layout_alignRight="@id/tvCounter3"
+        android:layout_marginRight="@dimen/appBorder"
+        android:src="@drawable/ic_remove_circle_outline_black_40dp"/>
+
+    <ImageView
+        android:id="@+id/btnCounter3Plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCounter1"
+        android:layout_alignLeft="@id/tvCounter3"
+        android:layout_marginLeft="@dimen/appBorder"
+        android:src="@drawable/ic_add_circle_outline_black_40dp"/>
+
+
+    <Button
+        android:id="@+id/btnDiceRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLifeCount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/janken"
+        android:text="@string/roll"/>
+
+    <ImageView
+        android:id="@+id/ivDiceRoll"
+        android:layout_width="@dimen/etHeight"
+        android:layout_height="@dimen/etHeight"
+        android:layout_below="@id/btnDiceRoll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/appBorder"
+        android:src="@drawable/die_one"/>
+
+    <Button
+        android:id="@+id/btnCoinFlip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCounter1Minus"
+        android:layout_margin="@dimen/small_border"
+        android:text="@string/flip"/>
+
+    <ImageView
+        android:id="@+id/ivCoinFlip"
+        android:layout_width="@dimen/coin"
+        android:layout_height="@dimen/coin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/small_border"
+        android:src="@drawable/coin_heads"/>
+
+    <Button
+        android:id="@+id/btnKill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLifeCount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/small_border"
+        android:text="@string/kill"
+        android:textColor="@color/red"
+        android:textSize="@dimen/small_border"
+        />
+
+
+
+
+
+
+</RelativeLayout>
